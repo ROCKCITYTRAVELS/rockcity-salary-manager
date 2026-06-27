@@ -37,7 +37,7 @@
       min-height: 100vh;
     }
 
-    /* --- LANDING PAGE --- */
+    /* ─── LANDING PAGE ─── */
     #landing {
       min-height: 100vh;
       display: flex;
@@ -182,7 +182,7 @@
       gap: 5px;
     }
 
-    /* --- APP --- */
+    /* ─── APP ─── */
     #app {
       display: none;
       flex-direction: column;
@@ -610,40 +610,40 @@
 </head>
 <body>
 
-<!-- -------------------------------
+<!-- ═══════════════════════════════
      LANDING PAGE
-------------------------------- -->
+═══════════════════════════════ -->
 <div id="landing">
   <div class="land-hero">
-    <div class="land-logo">??</div>
+    <div class="land-logo">RC</div>
     <h1>Rockcity <span>Salary</span> Manager</h1>
     <p>The complete payroll and employee salary management tool built for Rockcity businesses — fast, simple, and always accessible.</p>
     <div class="btn-group">
-      <button class="btn btn-primary" onclick="openApp()">?? Open Web App</button>
-      <a class="btn btn-apk" href="#apk-download" onclick="scrollToAPK(event)">?? Download APK</a>
-      <button class="btn btn-outline" onclick="installPWA()">?? Install App</button>
+      <button class="btn btn-primary" onclick="openApp()">🚀 Open Web App#9654; Open Web App</button>
+      <a class="btn btn-apk" href="#apk-download" onclick="scrollToAPK(event)">📲 Download APK#8595; Download APK</a>
+      <button class="btn btn-outline" onclick="installPWA()">⬇️ Install App#8659; Install App</button>
     </div>
   </div>
 
   <!-- Features -->
   <div class="features">
     <div class="feat-card">
-      <div class="icon">??</div>
+      
       <h3>Employee Records</h3>
       <p>Store and manage full employee profiles with roles, departments, and salary details.</p>
     </div>
     <div class="feat-card">
-      <div class="icon">??</div>
+      
       <h3>Payroll Tracking</h3>
       <p>Track monthly payroll, mark salaries as paid, and generate summaries instantly.</p>
     </div>
     <div class="feat-card">
-      <div class="icon">??</div>
+      
       <h3>Salary Reports</h3>
       <p>Visual breakdowns by department and role so you always know where the money goes.</p>
     </div>
     <div class="feat-card">
-      <div class="icon">??</div>
+      
       <h3>Works Offline</h3>
       <p>Install as a PWA and use it anywhere — even without an internet connection.</p>
     </div>
@@ -651,16 +651,16 @@
 
   <!-- APK Download Section -->
   <div class="apk-section" id="apk-download">
-    <h2>?? Download for Android</h2>
+    <h2>Download for Android</h2>
     <p>Get the native Android app directly — no Play Store needed.</p>
     <div class="apk-meta">
-      <span>?? Version 1.0.0</span>
-      <span>?? Android 6.0+</span>
-      <span>?? ~4.2 MB</span>
+      <span>📦 Version 1.0.0</span>
+      <span>🤖 Android 6.0+</span>
+      <span>📁 ~4.2 MB</span>
     </div>
     <br/>
     <a class="btn btn-apk" href="rockcity-salary-manager.apk" download>
-      ?? Download APK (Android)
+      ⬇️ Download APK (Android)#8595; Download APK (Android)
     </a>
     <p style="margin-top:14px;font-size:11px;color:rgba(255,255,255,0.4);">
       Enable "Install from unknown sources" in Android settings before installing.
@@ -669,28 +669,28 @@
 </div>
 
 
-<!-- -------------------------------
+<!-- ═══════════════════════════════
      MAIN APP
-------------------------------- -->
+═══════════════════════════════ -->
 <div id="app">
 
   <!-- Install Banner -->
   <div class="install-banner" id="installBanner" style="display:none;">
-    <span>??</span>
+    <span>📲</span>
     <span>Add to Home Screen for the best experience</span>
     <button onclick="installPWA()">Install</button>
-    <button class="close-banner" onclick="document.getElementById('installBanner').style.display='none'">?</button>
+    <button class="close-banner" onclick="document.getElementById('installBanner').style.display='none'">✕</button>
   </div>
 
   <!-- Top Nav -->
   <nav class="app-nav">
     <div class="nav-brand">
-      <div class="nav-logo">??</div>
+      <div class="nav-logo">RC</div>
       <span>RockCity SAL</span>
     </div>
     <div class="nav-actions">
-      <button class="icon-btn" onclick="showTab('search-tab')" title="Search">??</button>
-      <button class="icon-btn" onclick="goBack()" title="Home">??</button>
+      <button class="icon-btn" onclick="showTab('search-tab')" title="Search">S</button>
+      <button class="icon-btn" onclick="goBack()" title="Home">H</button>
     </div>
   </nav>
 
@@ -705,7 +705,7 @@
       <div class="lbl">Paid</div>
     </div>
     <div class="stat-item">
-      <div class="val" id="stat-payroll">?0</div>
+      <div class="val" id="stat-payroll">₦0</div>
       <div class="lbl">Monthly</div>
     </div>
   </div>
@@ -716,7 +716,7 @@
     <!-- Employees Tab -->
     <div id="emp-tab">
       <div class="search-wrap">
-        <span class="search-icon">??</span>
+        <span class="search-icon">🔍</span>#128269;</span>
         <input type="text" placeholder="Search employee..." id="empSearch" oninput="filterEmployees()" />
       </div>
       <div class="sec-header">
@@ -730,7 +730,7 @@
     <div id="payroll-tab" style="display:none;">
       <div class="payroll-summary">
         <h3>Total Monthly Payroll</h3>
-        <div class="big-num" id="payroll-total">?0</div>
+        <div class="big-num" id="payroll-total">₦0</div>
         <div class="sub" id="payroll-sub">0 employees · 0 paid · 0 pending</div>
       </div>
       <div class="sec-title" style="margin-bottom:12px;">Payment Status</div>
@@ -740,11 +740,11 @@
     <!-- Reports Tab -->
     <div id="reports-tab" style="display:none;">
       <div class="report-card">
-        <h3>?? Salary by Department</h3>
+        <h3>Salary by Department</h3>
         <div class="bar-chart" id="deptChart"></div>
       </div>
       <div class="report-card">
-        <h3>?? Top Earners</h3>
+        <h3>Top Earners</h3>
         <div class="bar-chart" id="topChart"></div>
       </div>
     </div>
@@ -752,7 +752,7 @@
     <!-- Search Tab -->
     <div id="search-tab" style="display:none;">
       <div class="search-wrap">
-        <span class="search-icon">??</span>
+        <span class="search-icon">🔍</span>#128269;</span>
         <input type="text" placeholder="Search by name, role, dept..." id="globalSearch" oninput="globalFilter()" />
       </div>
       <div class="emp-list" id="searchResults">
@@ -763,20 +763,20 @@
   </div>
 
   <!-- FAB -->
-  <button class="fab" onclick="openModal('add')" id="fab">+</button>
+  <button class="fab" onclick="openModal('add')" id="fab">＋</button>
 
   <!-- Bottom Nav -->
   <nav class="bottom-nav">
     <button class="bnav-item active" onclick="showTab('emp-tab', this)">
-      <div class="ico-wrap"><span class="ico">??</span></div>
+      <div class="ico-wrap"><span class="ico"><span class="ico">👥</span>#128101;</span></div>
       <span>Employees</span>
     </button>
     <button class="bnav-item" onclick="showTab('payroll-tab', this)">
-      <div class="ico-wrap"><span class="ico">??</span></div>
+      <div class="ico-wrap"><span class="ico"><span class="ico">💰</span>#36;</span></div>
       <span>Payroll</span>
     </button>
     <button class="bnav-item" onclick="showTab('reports-tab', this)">
-      <div class="ico-wrap"><span class="ico">??</span></div>
+      <div class="ico-wrap"><span class="ico"><span class="ico">📊</span>#9998;</span></div>
       <span>Reports</span>
     </button>
   </nav>
@@ -803,7 +803,7 @@
       </div>
     </div>
     <div class="form-row">
-      <label>Monthly Salary (?)</label>
+      <label>Monthly Salary (₦)</label>
       <input type="number" id="f-salary" placeholder="e.g. 150000" min="0" />
     </div>
     <div class="form-row">
@@ -826,7 +826,7 @@
 
 
 <script>
-// --- DATA -----------------------------------------------
+// ─── DATA ───────────────────────────────────────────────
 const COLORS = ['#1A2E4A','#2C4A6E','#C9A84C','#16A34A','#DC2626','#7C3AED','#0891B2','#DB2777'];
 
 let employees = JSON.parse(localStorage.getItem('rc_employees') || '[]');
@@ -853,7 +853,7 @@ function nextId() {
   return employees.length ? Math.max(...employees.map(e => e.id)) + 1 : 1;
 }
 
-// --- NAVIGATION -----------------------------------------
+// ─── NAVIGATION ─────────────────────────────────────────
 function openApp() {
   document.getElementById('landing').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
@@ -882,7 +882,7 @@ function showTab(tabId, btn) {
   if (tabId === 'payroll-tab') renderPayroll();
 }
 
-// --- RENDER ---------------------------------------------
+// ─── RENDER ─────────────────────────────────────────────
 function renderAll() {
   renderEmployees();
   updateStats();
@@ -898,7 +898,7 @@ function initials(name) {
 }
 
 function fmtMoney(n) {
-  return '?' + Number(n).toLocaleString('en-NG');
+  return '₦' + Number(n).toLocaleString('en-NG');
 }
 
 function badgeHTML(status) {
@@ -988,11 +988,11 @@ function updateStats() {
   document.getElementById('stat-paid').textContent  = employees.filter(e => e.status === 'paid').length;
   const total = employees.reduce((s,e) => s + Number(e.salary), 0);
   document.getElementById('stat-payroll').textContent = total >= 1000000
-    ? '?' + (total/1000000).toFixed(1) + 'M'
-    : total >= 1000 ? '?' + (total/1000).toFixed(0) + 'k' : fmtMoney(total);
+    ? '₦' + (total/1000000).toFixed(1) + 'M'
+    : total >= 1000 ? '₦' + (total/1000).toFixed(0) + 'k' : fmtMoney(total);
 }
 
-// --- MODAL ----------------------------------------------
+// ─── MODAL ──────────────────────────────────────────────
 function openModal(mode, id) {
   editId = id || null;
   document.getElementById('modalTitle').textContent = mode === 'edit' ? 'Edit Employee' : 'Add Employee';
@@ -1026,10 +1026,10 @@ function saveEmployee() {
   if (editId) {
     const idx = employees.findIndex(e => e.id === editId);
     employees[idx] = { ...employees[idx], name, role, dept, salary, status };
-    toast('Employee updated ?');
+    toast('Employee updated ✓');
   } else {
     employees.push({ id: nextId(), name, role, dept, salary, status });
-    toast('Employee added ?');
+    toast('Employee added ✓');
   }
   save(); closeModal(); renderAll();
 }
@@ -1038,10 +1038,10 @@ function togglePaid(id) { /* card click on payroll — handled by markPaid btn *
 
 function markPaid(id) {
   const e = employees.find(x => x.id === id);
-  if (e) { e.status = 'paid'; save(); renderPayroll(); toast(${e.name} marked as paid ?); }
+  if (e) { e.status = 'paid'; save(); renderPayroll(); toast(${e.name} marked as paid ✓); }
 }
 
-// --- TOAST ----------------------------------------------
+// ─── TOAST ──────────────────────────────────────────────
 function toast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -1049,7 +1049,7 @@ function toast(msg) {
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// --- PWA / INSTALL --------------------------------------
+// ─── PWA / INSTALL ──────────────────────────────────────
 window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault();
   deferredPrompt = e;
